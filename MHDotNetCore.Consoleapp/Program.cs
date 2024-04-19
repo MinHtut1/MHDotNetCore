@@ -9,7 +9,16 @@ stringBuilder.InitialCatalog = "MHDotNetCore.ConsoleApp";
 stringBuilder.UserID = "sa";
 stringBuilder.Password = "sa@123";
 SqlConnection connection = new SqlConnection(stringBuilder.ConnectionString);
-connection.Open();
-connection.Close(); 
 
-Console.ReadKey();
+connection.Open();
+Console.WriteLine("Connection open.");
+
+connection.Close(); 
+Console.WriteLine("Connection close.");
+
+string query = "";
+SqlCommand cmd = new SqlCommand(query, connection);
+
+
+
+Console.ReadKey();  
