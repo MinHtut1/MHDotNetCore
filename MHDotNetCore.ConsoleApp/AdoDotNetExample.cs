@@ -17,6 +17,7 @@ namespace MHDotNetCore.ConsoleApp
             UserID = "sa",
             Password = "sa@123";
     };
+
     pubilc void Read()
     {
         SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
