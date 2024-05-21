@@ -17,7 +17,6 @@ namespace MHDotNetCore.ConsoleApp
             UserID = "sa",
             Password = "sa@123",
             //TrustServiceCertificate = true
-
         };
     }
 }

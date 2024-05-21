@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MHDotNetCore.ConsoleApp.Dtos;
 
+[Table("Tbl_Blog")]
 public class Blogdto
 {
 

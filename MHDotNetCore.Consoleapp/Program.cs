@@ -43,6 +43,6 @@ foreach (DataRow dr  in dt.Rows)
 //adoDotNetExample.Edit(12);
     
 DapperExample dapperExample = new DapperExample();
-//dapperExample.Run();
+dapperExample.Run();
 
 Console.ReadLine();  

@@ -20,7 +20,7 @@ namespace MHDotNetCore.ConsoleApp.AdoDotNetExamples
         };
 
 
-        pubilc void Read()
+        public void Read()
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
 
@@ -94,7 +94,7 @@ namespace MHDotNetCore.ConsoleApp.AdoDotNetExamples
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogTitle", title);
             cmd.Parameters.AddWithValue("@BlogTitle", author);
-            cmd.Parameters.AddWithValue("@BlogTitle", content);
+            cmd.Parameters.AddWithValue("@BlogTitle", content); 
             int result = cmd.ExecuteNonQuery();
 
             connection.Close();
